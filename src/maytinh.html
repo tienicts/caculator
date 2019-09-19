@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="maytinh.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="show">
+                <span id="result"></span>
+            </div>
+            <table>
+                <tr>
+                    <td class="title">
+                        <div class="btn-container">
+                           <button onclick="clearNumber()">C</button> 
+                        </div> 
+                    </td>
+                    <td class="title"><div class="btn-container"><button onclick="am()">+/-</button></div></td>
+                    <td class="title"><div class="btn-container"><button onclick="handleClickOperator('%')">%</button></div></td>
+                    <td class="caculor" tabindex="0"><div class="btn-container"><button onclick="handleClickOperator('/')">/</button></div></td>
+                </tr>
+                <tr>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(7)">7</button></div></td>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(8)">8</button></div></td>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(9)">9</button></div></td>
+                    <td class="caculor" tabindex="0"><div class="btn-container"><button onclick="handleClickOperator('*')">*</button></div></td>
+                </tr>
+                <tr>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(4)">4</button></div></td>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(5)">5</button></div></td>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(6)">6</button></div></td>
+                    <td class="caculor" tabindex="0"><div class="btn-container"><button onclick="handleClickOperator('-')">-</button></div></td>
+                </tr>
+                <tr>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(1)">1</button></div></td>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(2)">2</button></div></td>
+                    <td class="number"><div class="btn-container"><button onclick="handleClickNumber(3)">3</button></div></td>
+                    <td class="caculor" tabindex="0" ><div class="btn-container"><button onclick="handleClickOperator('+')">+</button></div></td>
+                </tr>
+                <tr>
+                   <td colspan="2" class="zero"><div class="btn-container zero-btn-container"><button onclick="handleClickNumber(0)">0</button></div></td> 
+                   <td class="number"><div class="btn-container"><button onclick="handleClickNumber('.')">.</button></div></td>
+                   <td class="caculor" tabindex="0"><div class="btn-container"><button onclick="calculate()">=</button></div></td>
+                </tr>
+            </table>
+        </div>
+        <script src="maytinh.js"></script>
+    </body>
+</html>

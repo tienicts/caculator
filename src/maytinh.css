@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+.calculator {
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: black;
+    max-width: 450px;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.show {
+    flex: 1;
+    color: white;
+    height: 170px;
+    text-align: right;
+    font-size: 65px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+#result {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+table, tr{
+    border-collapse: collapse;
+    border: none;
+    margin: auto;
+    width: 100%;
+}
+td {
+    width: 25%;
+    padding: 1.2%;
+}
+.btn-container {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+.zero-btn-container {
+    padding-top: 50%;
+}
+button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 100px;
+    border-width: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.title button{
+    font-size: 20px;
+    color: black;
+    background-color: rgb(179, 181, 187);
+}
+.title button:active {
+    background-color: rgb(196, 214, 221);
+}
+.caculor button {
+    font-size: 30px;
+    color: white;
+    background-color:#ff9933;
+}
+.caculor button:focus {
+    background-color: #ffb380;
+}
+.number button {
+    font-size: 30px;
+    color: white;
+    background-color: #404040;
+}
+.number button:active {
+    background-color: #a6a6a6;
+}
+.zero button {
+    font-size: 30px;
+    color: white;
+    background-color: #404040; 
+    padding: 0 80 0 20; 
+}
+.zero button:active {
+    color: white;
+    background-color: #404040; 
+}
